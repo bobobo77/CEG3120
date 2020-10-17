@@ -14,8 +14,6 @@ echo "bash project1.sh" >> ~/.profile
 echo "reload .profile to save these changes"
 else
 
-$1 =  "I'm editing the bottom to the header"
-echo $1  > /etc/update-motd.d/00-header
 #	tried both types of in arrow functions to add the message to the header file. I'm lacking permission, apparently.
 
 go get github.com/vim-volt/volt
@@ -24,6 +22,9 @@ go get github.com/vim-volt/volt
 alias cheer = echo "You're doing great, keep it up!"
 #	this was depressing me, so a feelgood message was needed
 
+alias aws-ssh ="ssh -i ceg-3120-aws-vm.pem ubuntu@54.227.43.11"
+#       My login alias
 
+alias scriptHelp = echo 'this is my second iteration of my first script.'
 fi
 
